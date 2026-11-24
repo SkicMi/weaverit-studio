@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Weaver IT — Independent Browser Game Studio | Zagreb, Croatia</title>
-  <meta name="description" content="Weaver IT is an independent game studio in Zagreb, Croatia building instant-play 3D multiplayer browser games. Explore Sinteza: live creature animations, 6-slot layered gear sets, and real-time elemental combat." />
+  <title>Weaver IT — Sinteza 3D Browser MMO | Zagreb, Croatia</title>
+  <meta name="description" content="Weaver IT is an independent game studio in Zagreb, Croatia. Play Sinteza: Elemental Arena & Extraction MMO free in your browser — 3D exploration, layered gear, creature scanning, and 1v1 ELO Arena." />
   <link rel="canonical" href="https://weaverit.studio/" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Weaver IT — Independent Browser Game Studio" />
+  <meta property="og:title" content="Weaver IT — Sinteza 3D Browser MMO" />
   <meta property="og:description" content="Play Sinteza: Elemental Arena & Extraction MMO free in your browser. Built in Zagreb, Croatia by Weaver IT." />
   <meta property="og:url" content="https://weaverit.studio/" />
   <meta property="og:image" content="https://weaverit.studio/assets/screens/clash_fire_vs_water.webp" />
@@ -24,59 +24,93 @@
       </a>
       <nav class="nav-links" aria-label="Primary">
         <a href="/" class="active">Home</a>
+        <a href="#tour">Inside Sinteza</a>
         <a href="#gear">Gear System</a>
         <a href="#creatures">Creatures</a>
-        <a href="#screenshots">Screenshots</a>
         <a href="/sinteza/">Guide</a>
-        <a href="/about/">About</a>
-        <a class="btn btn-primary btn-sm" href="https://sinteza.weaverit.studio">Play Sinteza</a>
+        <a href="/about/">Studio</a>
+        <a class="btn btn-primary btn-sm" href="https://sinteza.weaverit.studio">Play Free</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- HERO + LIVE NATURE PATH ANIMATION -->
-    <section class="hero">
+    <!-- FULL-BLEED CINEMATIC HERO -->
+    <section class="hero-banner">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
       <div class="wrap">
-        <span class="eyebrow">Independent Game Studio &bull; Zagreb, Croatia</span>
-        <h1>Instant-play 3D multiplayer worlds, built directly for the web.</h1>
-        <p class="lead">
-          Weaver IT is an independent game development studio based in Zagreb, Croatia. Our flagship title, <strong>Sinteza: Elemental Arena &amp; Extraction MMO</strong>, launches in seconds with zero downloads — featuring layered 6-slot gear progression, scannable elemental creatures, personal housing, and competitive 1v1 ELO Arena duels.
-        </p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="https://sinteza.weaverit.studio">Play Sinteza Free &rarr;</a>
-          <a class="btn btn-secondary" href="#gear">Explore Gear &amp; Creatures</a>
-          <a class="btn btn-secondary" href="/sinteza/">Player Guide</a>
-        </div>
-
-        <div class="stage-card" aria-label="Real 3D in-game footage from Sinteza">
-          <div class="video-stage-wrap">
-            <video id="hero-gameplay-video" autoplay loop muted playsinline poster="/assets/screens/elemental_world.webp">
-              <source src="/assets/screens/sinteza_gameplay.mp4?v=2" type="video/mp4" />
-            </video>
-            <div class="stage-badge">REAL 3D IN-GAME FOOTAGE &bull; VERDANTWARDEN NATURE TRAIL</div>
-          </div>
-          <div class="stage-controls">
-            <div class="ctrl-group">
-              <span class="ctrl-label">Captured Live from</span>
-              <a href="https://sinteza.weaverit.studio" style="font-weight:700;font-size:0.9rem;">sinteza.weaverit.studio</a>
-              <span style="color:var(--muted);font-size:0.84rem;">&mdash; 3D WebGL engine, dynamic weather, real-time shadows &amp; Synthesis Radar</span>
-            </div>
-            <div class="ctrl-group">
-              <a class="btn btn-primary btn-sm" href="https://sinteza.weaverit.studio">Jump Into This World &rarr;</a>
-            </div>
+        <div class="hero-content">
+          <span class="eyebrow">Weaver IT Studio &bull; Zagreb, Croatia</span>
+          <h1 class="hero-title">SINTEZA</h1>
+          <div class="hero-subtitle">Elemental Arena &amp; Extraction MMO &mdash; Instant-Play 3D Browser World</div>
+          <p class="lead">
+            Explore living elemental biomes, extract high-tier loot, scan wild creatures into your Cyber Deck, customize your multi-floor Sanctuary, and battle rivals in ranked 1v1 ELO Arena duels — directly in your browser with zero downloads.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://sinteza.weaverit.studio">Play Free in Browser &rarr;</a>
+            <a class="btn btn-secondary" href="#tour">Take the Game Tour</a>
+            <a class="btn btn-secondary" href="/sinteza/">Player Guide</a>
           </div>
         </div>
 
-        <div class="meta-strip">
-          <span>&#10003; Free to play in Chrome, Firefox, Edge &amp; Safari</span>
-          <span>&#10003; 14-frame skeletal 8-directional sprites</span>
-          <span>&#10003; Authoritative multiplayer &amp; 1v1 ELO Arena</span>
+        <div class="stat-strip">
+          <div class="stat-box">
+            <div class="stat-val">40+</div>
+            <div class="stat-lbl">Scannable Wild Creatures</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val">8 Elements</div>
+            <div class="stat-lbl">Fire, Water, Nature, Steel &amp; more</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val">1v1 ELO</div>
+            <div class="stat-lbl">Ranked Arena &amp; Card Wagers</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-val">0 MB</div>
+            <div class="stat-lbl">Instant 3D WebGL Play</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- INTERACTIVE GEAR SYSTEM -->
+    <!-- INTERACTIVE 5-TAB GAME TOUR (REAL 1280x720 IN-GAME SCREENSHOTS) -->
+    <section class="block" id="tour">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">100% Real In-Game Captures</span>
+            <h2>Inside Sinteza</h2>
+          </div>
+          <span style="color:var(--muted);font-size:0.86rem;">Switch tabs to inspect every core system &bull; Click image to zoom</span>
+        </div>
+
+        <div class="tour-tabs" role="tablist">
+          <button class="tour-tab active" type="button" data-tour="world">1. Elemental Worlds</button>
+          <button class="tour-tab" type="button" data-tour="gear">2. Field Pack &amp; Gear</button>
+          <button class="tour-tab" type="button" data-tour="deck">3. Cyber Deck &amp; Arena</button>
+          <button class="tour-tab" type="button" data-tour="dome">4. Mega-Dome Hub</button>
+          <button class="tour-tab" type="button" data-tour="sanctuary">5. Personal Sanctuary</button>
+        </div>
+
+        <div class="tour-frame">
+          <div id="tour-img-wrap" class="tour-img-wrap" data-lightbox-src="/assets/screens/elemental_world.webp" data-lightbox-cap="Elemental Worlds & Dynamic Weather — Explore 3D Verdantwarden biomes with live Woodland Rain & Hard Wind weather modifiers, Synthesis Radar, roaming wild creatures, and full-loot extraction runs.">
+            <img id="tour-img" src="/assets/screens/elemental_world.webp" alt="Elemental Worlds & Dynamic Weather" />
+            <span class="tour-zoom-hint">Click to zoom</span>
+          </div>
+          <div class="tour-meta">
+            <div class="tour-meta-text">
+              <h3 id="tour-title">Elemental Worlds &amp; Dynamic Weather</h3>
+              <p id="tour-desc">Explore 3D Verdantwarden biomes with live Woodland Rain &amp; Hard Wind weather modifiers, Synthesis Radar, roaming wild creatures, and full-loot extraction runs.</p>
+            </div>
+            <a class="btn btn-primary btn-sm" href="https://sinteza.weaverit.studio">Play Live Now &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE 60 FPS LAYERED GEAR SYSTEM -->
     <section class="block" id="gear">
       <div class="wrap">
         <div class="section-head">
@@ -87,26 +121,18 @@
           <a class="btn btn-secondary btn-sm" href="https://sinteza.weaverit.studio">Build Your Loadout &rarr;</a>
         </div>
         <p>
-          Sinteza features a full extraction-style <strong>Field Pack &amp; Synthesis Gear</strong> inventory: a spatial <strong>6&times;5 Main Backpack</strong>, expandable <strong>4&times;3 Tactical Pouch</strong>, <strong>7 Equipment Slots</strong> (Weapon, Helmet, Armor, Boots, Relic, Gloves, Legs, Visor), an <strong>Explore Tactical Belt [1–4]</strong>, and live character customization. Every equipped piece renders directly on your 3D sprite in real time:
+          Every armor piece and weapon you loot or extract renders directly on your character across 8 directions and 14 animation frames. Preview five complete elemental sets below:
         </p>
-
-        <figure class="feature-screen" data-lightbox-src="/assets/screens/gear_system_ingame.webp" data-lightbox-cap="Real In-Game UI: Field Pack & Synthesis Gear — 7 equipment slots, 6x5 spatial backpack, 4x3 Tactical Pouch, Explore Tactical Belt, and Runner Appearance.">
-          <img src="/assets/screens/gear_system_ingame.webp" alt="Real in-game Field Pack and Synthesis Gear UI screenshot" loading="lazy" />
-          <figcaption class="shot-cap">
-            <strong>Real In-Game UI &mdash; Field Pack &amp; Synthesis Gear (Press [I])</strong>
-            <span>Click to inspect full size &bull; Spatial grid backpack, tactical pouches, equipment slots, and live Runner Appearance customization.</span>
-          </figcaption>
-        </figure>
 
         <div class="gear-layout">
           <div class="gear-preview-panel">
             <span id="gear-set-el" class="el-badge el-light">Light</span>
-            <canvas id="gear-preview" width="240" height="240"></canvas>
+            <canvas id="gear-preview" width="230" height="230"></canvas>
             <div class="gear-set-title">
               <h3 id="gear-set-name">Seraphim Light Set</h3>
               <div id="gear-set-bonus" class="gear-set-bonus"></div>
             </div>
-            <div class="ctrl-group" style="justify-content:center;">
+            <div class="ctrl-group" style="justify-content:center;width:100%;">
               <button class="mini-btn" type="button" data-gear-mode="idle">Idle</button>
               <button class="mini-btn active" type="button" data-gear-mode="walk">Walk</button>
               <button class="mini-btn" type="button" data-gear-mode="run">Run</button>
@@ -160,50 +186,21 @@
       </div>
     </section>
 
-    <!-- ANIMATED CREATURES BESTIARY -->
+    <!-- 60 FPS CREATURE BESTIARY -->
     <section class="block" id="creatures">
       <div class="wrap">
         <div class="section-head">
           <div>
             <span class="eyebrow">Elemental Bestiary</span>
-            <h2>Wild Creatures &amp; Live Animations</h2>
+            <h2>Wild Creatures &amp; Collectible Cards</h2>
           </div>
-          <span style="color:var(--muted);font-size:0.88rem;">Click any creature's card thumbnail to zoom</span>
+          <span style="color:var(--muted);font-size:0.86rem;">60 FPS live sprites &bull; Click any card thumbnail to zoom</span>
         </div>
-        <p>
-          Explore elemental biomes to encounter, battle, and scan over 40 wild creatures into permanent cards inside your <strong>Cyber Deck</strong>. Watch real-time 3D combat against a wild <em>Sporeling Husk</em> in the Verdantwarden forest below:
-        </p>
-
-        <div class="stage-card" style="margin-top:16px;margin-bottom:22px;" aria-label="Real 3D in-game creature combat footage from Sinteza">
-          <div class="video-stage-wrap">
-            <video autoplay loop muted playsinline poster="/assets/screens/combat_poster.webp">
-              <source src="/assets/screens/sinteza_combat.mp4" type="video/mp4" />
-            </video>
-            <div class="stage-badge">REAL 3D COMBAT &bull; FIGHTING WILD SPORELING HUSK</div>
-          </div>
-          <div class="stage-controls">
-            <div class="ctrl-group">
-              <span class="ctrl-label">Live PvE Combat</span>
-              <span style="color:var(--muted);font-size:0.84rem;">Real-time melee slashes, elemental abilities, floating damage numbers &amp; creature aggro</span>
-            </div>
-            <div class="ctrl-group">
-              <a class="btn btn-primary btn-sm" href="https://sinteza.weaverit.studio">Battle Now &rarr;</a>
-            </div>
-          </div>
-        </div>
-
-        <figure class="feature-screen" data-lightbox-src="/assets/screens/creature_deck_ingame.webp" data-lightbox-cap="Real In-Game UI: Cyber Deck — Active Creature Resonance (Malakor), 6-card elemental Battle Deck, and Cyber Card Binder.">
-          <img src="/assets/screens/creature_deck_ingame.webp" alt="Real in-game Cyber Deck and Creature Resonance UI screenshot" loading="lazy" />
-          <figcaption class="shot-cap">
-            <strong>Real In-Game UI &mdash; Cyber Deck &amp; Active Creature Resonance (Press [K])</strong>
-            <span>Click to inspect full size &bull; Slot your scanned Creature Resonance and 6 elemental Ability Cards for PvE and 1v1 ELO Arena battles.</span>
-          </figcaption>
-        </figure>
 
         <div class="creatures-grid">
           <article class="creature-card">
             <div class="creature-stage">
-              <canvas class="creature-canvas" data-creature="cinder_arachnid" width="186" height="186"></canvas>
+              <canvas class="creature-canvas" data-creature="cinder_arachnid" width="180" height="180"></canvas>
               <img class="creature-card-thumb" src="/assets/cards/cinder_arachnid.webp" alt="Cinder Arachnid Card" loading="lazy" data-lightbox-src="/assets/cards/cinder_arachnid.webp" data-lightbox-cap="Cinder Arachnid — Fire Creature Card" />
             </div>
             <div class="creature-body">
@@ -211,7 +208,7 @@
                 <h3>Cinder Arachnid</h3>
                 <span class="el-badge el-fire">Fire</span>
               </div>
-              <p class="creature-desc">Magma-plated ambush predator from the Caldera Wastes. Strikes rapidly with searing ember bursts.</p>
+              <p class="creature-desc">Magma-plated ambush predator from the Caldera Wastes with rapid ember bursts.</p>
               <div class="creature-actions">
                 <button class="mini-btn active" type="button" data-c-mode="walk">Walk</button>
                 <button class="mini-btn" type="button" data-c-mode="run">Run</button>
@@ -222,7 +219,7 @@
 
           <article class="creature-card">
             <div class="creature-stage">
-              <canvas class="creature-canvas" data-creature="spore_walker" width="186" height="186"></canvas>
+              <canvas class="creature-canvas" data-creature="spore_walker" width="180" height="180"></canvas>
               <img class="creature-card-thumb" src="/assets/cards/spore_walker.webp" alt="Spore Walker Card" loading="lazy" data-lightbox-src="/assets/cards/spore_walker.webp" data-lightbox-cap="Spore Walker — Nature Creature Card" />
             </div>
             <div class="creature-body">
@@ -230,7 +227,7 @@
                 <h3>Spore Walker</h3>
                 <span class="el-badge el-nature">Nature</span>
               </div>
-              <p class="creature-desc">Bioluminescent forest guardian roaming the Verdant Trails. Releases regenerative and toxic spore clouds.</p>
+              <p class="creature-desc">Bioluminescent forest guardian roaming Verdant trails with regenerative spore clouds.</p>
               <div class="creature-actions">
                 <button class="mini-btn active" type="button" data-c-mode="walk">Walk</button>
                 <button class="mini-btn" type="button" data-c-mode="run">Run</button>
@@ -241,7 +238,7 @@
 
           <article class="creature-card">
             <div class="creature-stage">
-              <canvas class="creature-canvas" data-creature="abyssal_ribbon" width="186" height="186"></canvas>
+              <canvas class="creature-canvas" data-creature="abyssal_ribbon" width="180" height="180"></canvas>
               <img class="creature-card-thumb" src="/assets/cards/abyssal_ribbon.webp" alt="Abyssal Ribbon Card" loading="lazy" data-lightbox-src="/assets/cards/abyssal_ribbon.webp" data-lightbox-cap="Abyssal Ribbon — Water Creature Card" />
             </div>
             <div class="creature-body">
@@ -249,7 +246,7 @@
                 <h3>Abyssal Ribbon</h3>
                 <span class="el-badge el-water">Water</span>
               </div>
-              <p class="creature-desc">Graceful deep-trench serpent that glides across pelagic shoals, slicing foes with high-pressure hydro arcs.</p>
+              <p class="creature-desc">Deep-trench serpent gliding across pelagic shoals with high-pressure hydro arcs.</p>
               <div class="creature-actions">
                 <button class="mini-btn active" type="button" data-c-mode="walk">Walk</button>
                 <button class="mini-btn" type="button" data-c-mode="run">Run</button>
@@ -260,7 +257,7 @@
 
           <article class="creature-card">
             <div class="creature-stage">
-              <canvas class="creature-canvas" data-creature="piston_centipede" width="186" height="186"></canvas>
+              <canvas class="creature-canvas" data-creature="piston_centipede" width="180" height="180"></canvas>
               <img class="creature-card-thumb" src="/assets/cards/piston_centipede.webp" alt="Piston Centipede Card" loading="lazy" data-lightbox-src="/assets/cards/piston_centipede.webp" data-lightbox-cap="Piston Centipede — Steel Creature Card" />
             </div>
             <div class="creature-body">
@@ -268,7 +265,7 @@
                 <h3>Piston Centipede</h3>
                 <span class="el-badge el-steel">Steel</span>
               </div>
-              <p class="creature-desc">Armored industrial construct powered by hydraulic drives. Shrugs off light strikes and crushes shields.</p>
+              <p class="creature-desc">Armored hydraulic construct built to absorb damage and shatter enemy shields.</p>
               <div class="creature-actions">
                 <button class="mini-btn active" type="button" data-c-mode="walk">Walk</button>
                 <button class="mini-btn" type="button" data-c-mode="run">Run</button>
@@ -279,7 +276,7 @@
 
           <article class="creature-card">
             <div class="creature-stage">
-              <canvas class="creature-canvas" data-creature="arc_serpent" width="186" height="186"></canvas>
+              <canvas class="creature-canvas" data-creature="arc_serpent" width="180" height="180"></canvas>
               <img class="creature-card-thumb" src="/assets/cards/arc_serpent.webp" alt="Arc Serpent Card" loading="lazy" data-lightbox-src="/assets/cards/arc_serpent.webp" data-lightbox-cap="Arc Serpent — Electric Creature Card" />
             </div>
             <div class="creature-body">
@@ -287,7 +284,7 @@
                 <h3>Arc Serpent</h3>
                 <span class="el-badge el-electric">Electric</span>
               </div>
-              <p class="creature-desc">High-voltage Stormcoil hunter capable of chaining lightning surges across clustered explorers.</p>
+              <p class="creature-desc">High-voltage Stormcoil hunter chaining lightning surges across clustered foes.</p>
               <div class="creature-actions">
                 <button class="mini-btn active" type="button" data-c-mode="walk">Walk</button>
                 <button class="mini-btn" type="button" data-c-mode="run">Run</button>
@@ -298,7 +295,7 @@
 
           <article class="creature-card">
             <div class="creature-stage">
-              <canvas class="creature-canvas" data-creature="malakor" width="186" height="186"></canvas>
+              <canvas class="creature-canvas" data-creature="malakor" width="180" height="180"></canvas>
               <img class="creature-card-thumb" src="/assets/cards/malakor.webp" alt="Abyssal Malakor Card" loading="lazy" data-lightbox-src="/assets/cards/malakor.webp" data-lightbox-cap="Abyssal Malakor — Dark Boss Creature Card" />
             </div>
             <div class="creature-body">
@@ -306,7 +303,7 @@
                 <h3>Abyssal Malakor</h3>
                 <span class="el-badge el-dark">Dark</span>
               </div>
-              <p class="creature-desc">Apex void-rift sovereign lurking in deep dungeons. Drops rare Tier 4–5 schematics and high-value scan data.</p>
+              <p class="creature-desc">Apex void-rift sovereign lurking in deep dungeons with rare Tier 4–5 loot drops.</p>
               <div class="creature-actions">
                 <button class="mini-btn active" type="button" data-c-mode="walk">Walk</button>
                 <button class="mini-btn" type="button" data-c-mode="run">Run</button>
@@ -318,75 +315,13 @@
       </div>
     </section>
 
-    <!-- IN-GAME SCREENSHOTS & ELEMENTAL CLASHES -->
-    <section class="block" id="screenshots">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Real Gameplay &amp; World Art</span>
-            <h2>Inside Sinteza</h2>
-          </div>
-          <span style="color:var(--muted);font-size:0.88rem;">Click any image to view full size</span>
-        </div>
-
-        <div class="gallery-grid">
-          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/elemental_world.webp" data-lightbox-cap="Elemental World (Verdantwarden Clan) — Live Woodland Rain dynamic weather, 3D exploration, Synthesis Radar, and Resonance HUD.">
-            <img src="/assets/screens/elemental_world.webp" alt="Sinteza 3D Elemental World Nature biome with Woodland Rain screenshot" loading="lazy" />
-            <figcaption class="shot-cap">
-              <strong>3D Elemental World &amp; Dynamic Weather</strong>
-              <span>Explore Verdantwarden biomes with live Woodland Rain &amp; Hard Wind weather buffs, Synthesis Radar, and roaming wild creatures.</span>
-            </figcaption>
-          </figure>
-
-          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/dome_hub.webp" data-lightbox-cap="Sinteza Mega-Dome — Safe social hub, Synthesis Radar, leaderboards, and the red Personal Sanctuary portal.">
-            <img src="/assets/screens/dome_hub.webp" alt="Sinteza Mega-Dome social hub screenshot" loading="lazy" />
-            <figcaption class="shot-cap">
-              <strong>Sinteza Mega-Dome Hub</strong>
-              <span>Safe lobby, global leaderboards, vending stations, and portals to Elemental Worlds &amp; your Sanctuary.</span>
-            </figcaption>
-          </figure>
-
-          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/sanctuary_house.webp" data-lightbox-cap="Personal Sanctuary — Multi-floor customizable house with storage wardrobes, kitchen fridges, furniture sitting, and HP/Stamina bed recovery.">
-            <img src="/assets/screens/sanctuary_house.webp" alt="Sinteza Personal Sanctuary interior screenshot" loading="lazy" />
-            <figcaption class="shot-cap">
-              <strong>Personal Sanctuary Housing</strong>
-              <span>Multi-floor private home with tiered storage wardrobes, kitchen fridge, armor stands, and bed HP/Stamina regen.</span>
-            </figcaption>
-          </figure>
-
-          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/guild_lodge.webp" data-lightbox-cap="Sylvanheart Guild Lodge — Multi-floor open-world wooden lodge with shelter mechanics during storms and full-loot Open PvP.">
-            <img src="/assets/screens/guild_lodge.webp" alt="Sinteza Sylvanheart Guild Lodge interior screenshot" loading="lazy" />
-            <figcaption class="shot-cap">
-              <strong>Sylvanheart Guild Lodge (Open World)</strong>
-              <span>Enterable multi-floor buildings across the frontier offering storm shelter and tactical Open PvP interiors.</span>
-            </figcaption>
-          </figure>
-
-          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/clash_fire_vs_water.webp" data-lightbox-cap="Elemental Clash: Fire vs Water — Official Sinteza loading art.">
-            <img src="/assets/screens/clash_fire_vs_water.webp" alt="Fire vs Water elemental clash artwork" loading="lazy" />
-            <figcaption class="shot-cap">
-              <strong>Elemental Clash: Fire vs Water</strong>
-              <span>High-stakes elemental counters drive both open-world extraction runs and 1v1 ELO Arena duels.</span>
-            </figcaption>
-          </figure>
-
-          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/clash_steel_vs_nature.webp" data-lightbox-cap="Elemental Clash: Steel vs Nature — Official Sinteza loading art.">
-            <img src="/assets/screens/clash_steel_vs_nature.webp" alt="Steel vs Nature elemental clash artwork" loading="lazy" />
-            <figcaption class="shot-cap">
-              <strong>Elemental Clash: Steel vs Nature</strong>
-              <span>Heavy forged armor meets rapid regeneration and spore control across the elemental frontier.</span>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTROLS & STUDIO PHILOSOPHY -->
+    <!-- QUICK CONTROLS & ABOUT WEAVER IT -->
     <section class="block">
       <div class="wrap">
-        <h2>Quick Controls &amp; Studio Philosophy</h2>
+        <span class="eyebrow">Built in Zagreb, Croatia</span>
+        <h2>Controls &amp; Studio Philosophy</h2>
         <p>
-          At <strong>Weaver IT</strong> (Zagreb, Croatia), we build real-time 3D multiplayer games with TypeScript, Three.js, and authoritative Node.js servers so anyone can play in seconds without downloads. Sinteza is 100% free to play — players receive daily ELO Tickets automatically and can optionally watch short rewarded ads for bonus tickets.
+          <strong>Weaver IT</strong> builds accessible, server-authoritative 3D multiplayer browser games with TypeScript, Three.js, and Node.js. Sinteza is 100% free to play with automatic daily ELO Tickets and optional rewarded ads — no downloads and no pay-to-win walls.
         </p>
 
         <table class="kbd-table">
@@ -411,23 +346,23 @@
             <tr>
               <td>Combat &amp; Abilities</td>
               <td><kbd>Left Click</kbd> / <kbd>1</kbd>–<kbd>4</kbd></td>
-              <td>Swing or fire your equipped weapon and cast elemental ability cards.</td>
+              <td>Attack with your equipped weapon and cast elemental abilities from your Cyber Deck.</td>
             </tr>
             <tr>
               <td>Second Wind</td>
               <td><kbd>R</kbd></td>
-              <td>Trigger emergency HP &amp; Shield recovery in combat.</td>
+              <td>Activate defensive Health &amp; Shield recovery during intense combat.</td>
             </tr>
             <tr>
               <td>Deck, Bag &amp; Scanner</td>
               <td><kbd>K</kbd> / <kbd>I</kbd> / <kbd>L</kbd></td>
-              <td>Equip gear, inspect extracted loot, and scan wild creatures or terrain locations.</td>
+              <td>Open your Cyber Deck, Field Pack &amp; Gear inventory, or Synthesis Scanner.</td>
             </tr>
           </tbody>
         </table>
 
         <div class="cta-row" style="margin-top: 24px;">
-          <a class="btn btn-primary" href="https://sinteza.weaverit.studio">Launch Sinteza Now &rarr;</a>
+          <a class="btn btn-primary" href="https://sinteza.weaverit.studio">Play Sinteza Free &rarr;</a>
           <a class="btn btn-secondary" href="/sinteza/">Read Full Game Guide</a>
           <a class="btn btn-secondary" href="/about/">About Weaver IT</a>
         </div>
