@@ -4,12 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weaver IT — Independent Browser Game Studio | Zagreb, Croatia</title>
-  <meta name="description" content="Weaver IT is an independent game studio in Zagreb, Croatia building instant-play 3D multiplayer browser games. Play Sinteza: Elemental Arena & Extraction MMO free in your browser." />
+  <meta name="description" content="Weaver IT is an independent game studio in Zagreb, Croatia building instant-play 3D multiplayer browser games. Explore Sinteza: live creature animations, 6-slot layered gear sets, and real-time elemental combat." />
   <link rel="canonical" href="https://weaverit.studio/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Weaver IT — Independent Browser Game Studio" />
   <meta property="og:description" content="Play Sinteza: Elemental Arena & Extraction MMO free in your browser. Built in Zagreb, Croatia by Weaver IT." />
   <meta property="og:url" content="https://weaverit.studio/" />
+  <meta property="og:image" content="https://weaverit.studio/assets/screens/clash_fire_vs_water.webp" />
   <meta name="google-adsense-account" content="ca-pub-4282943657479111" />
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282943657479111" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/style.css" />
@@ -23,90 +24,346 @@
       </a>
       <nav class="nav-links" aria-label="Primary">
         <a href="/" class="active">Home</a>
-        <a href="/sinteza/">Sinteza Guide</a>
-        <a href="/about/">About Studio</a>
-        <a href="/privacy/">Privacy</a>
-        <a href="/terms/">Terms</a>
+        <a href="#gear">Gear System</a>
+        <a href="#creatures">Creatures</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="/sinteza/">Guide</a>
+        <a href="/about/">About</a>
         <a class="btn btn-primary btn-sm" href="https://sinteza.weaverit.studio">Play Sinteza</a>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- HERO + LIVE NATURE PATH ANIMATION -->
     <section class="hero">
       <div class="wrap">
         <span class="eyebrow">Independent Game Studio &bull; Zagreb, Croatia</span>
         <h1>Instant-play 3D multiplayer worlds, built directly for the web.</h1>
         <p class="lead">
-          Weaver IT is an independent game development studio based in Zagreb, Croatia. We craft real-time 3D browser games that launch in seconds with zero downloads, combining competitive skill-based combat, creature discovery, and persistent player progression.
+          Weaver IT is an independent game development studio based in Zagreb, Croatia. Our flagship title, <strong>Sinteza: Elemental Arena &amp; Extraction MMO</strong>, launches in seconds with zero downloads — featuring layered 6-slot gear progression, scannable elemental creatures, personal housing, and competitive 1v1 ELO Arena duels.
         </p>
         <div class="cta-row">
           <a class="btn btn-primary" href="https://sinteza.weaverit.studio">Play Sinteza Free &rarr;</a>
-          <a class="btn btn-secondary" href="/sinteza/">Read the Sinteza Guide</a>
+          <a class="btn btn-secondary" href="#gear">Explore Gear &amp; Creatures</a>
+          <a class="btn btn-secondary" href="/sinteza/">Player Guide</a>
         </div>
+
+        <div class="stage-card" aria-label="Interactive Sinteza Nature Path live sprite animation">
+          <div class="stage-canvas-wrap">
+            <canvas id="nature-stage"></canvas>
+            <div class="stage-badge">LIVE IN-GAME SPRITES &bull; VERDANT NATURE TRAIL</div>
+          </div>
+          <div class="stage-controls">
+            <div class="ctrl-group">
+              <span class="ctrl-label">Motion</span>
+              <button class="chip-btn active" type="button" data-nature-mode="walk">Walk</button>
+              <button class="chip-btn" type="button" data-nature-mode="run">Sprint</button>
+              <button class="chip-btn" type="button" data-nature-mode="attack">Attack</button>
+            </div>
+            <div class="ctrl-group">
+              <span class="ctrl-label">Armor Set</span>
+              <button class="chip-btn active" type="button" data-nature-set="verdant">Verdant</button>
+              <button class="chip-btn" type="button" data-nature-set="cinder">Cinder</button>
+              <button class="chip-btn" type="button" data-nature-set="frostveil">Frostveil</button>
+              <button class="chip-btn" type="button" data-nature-set="seraphim">Seraphim</button>
+              <button class="chip-btn" type="button" data-nature-set="ironclad">Ironclad</button>
+            </div>
+          </div>
+        </div>
+
         <div class="meta-strip">
-          <span>&#10003; Free to play in any modern desktop browser</span>
-          <span>&#10003; Real-time 3D WebGL multiplayer</span>
-          <span>&#10003; No installation or launcher required</span>
+          <span>&#10003; Free to play in Chrome, Firefox, Edge &amp; Safari</span>
+          <span>&#10003; 14-frame skeletal 8-directional sprites</span>
+          <span>&#10003; Authoritative multiplayer &amp; 1v1 ELO Arena</span>
         </div>
       </div>
     </section>
 
-    <section class="block">
+    <!-- INTERACTIVE GEAR SYSTEM -->
+    <section class="block" id="gear">
       <div class="wrap">
-        <h2>Flagship Title: Sinteza — Elemental Arena &amp; Extraction MMO</h2>
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Visible Layered Equipment</span>
+            <h2>6-Slot Gear System &amp; Tiered Weapons</h2>
+          </div>
+          <a class="btn btn-secondary btn-sm" href="https://sinteza.weaverit.studio">Build Your Loadout &rarr;</a>
+        </div>
         <p>
-          <strong>Sinteza</strong> drops you into a living elemental frontier connected to the Sinteza Mega-Dome hub. Explore open-world biomes and multi-room dungeons, scan wild elemental creatures and arcane locations into collectible cards, customize your Personal Sanctuary, and challenge other explorers in high-stakes 1v1 ELO Arena duels.
+          Every piece of equipment you loot, craft, or extract in Sinteza renders directly on your character in real time across 8 directions and 14 animation frames. Mix and match <strong>Helmet</strong>, <strong>Visor</strong>, <strong>Armor</strong>, <strong>Gloves</strong>, <strong>Legs</strong>, <strong>Footwear</strong>, and <strong>Tier 1–5 Weapons</strong>. Click any set below to inspect its live animated sprite and slot breakdown:
         </p>
 
-        <div class="grid">
-          <article class="card">
-            <span class="pill">Exploration &amp; Extraction</span>
-            <h3>Open-World Biomes &amp; Dungeons</h3>
-            <p>
-              Travel from the Sinteza Dome through elemental portals into procedurally rich zones. Gather resources, open chests, defeat roaming enemies, and extract safely back to the Dome to lock in your field loot.
-            </p>
+        <div class="gear-layout">
+          <div class="gear-preview-panel">
+            <span id="gear-set-el" class="el-badge el-light">Light</span>
+            <canvas id="gear-preview" width="240" height="240"></canvas>
+            <div class="gear-set-title">
+              <h3 id="gear-set-name">Seraphim Light Set</h3>
+              <div id="gear-set-bonus" class="gear-set-bonus"></div>
+            </div>
+            <div class="ctrl-group" style="justify-content:center;">
+              <button class="mini-btn" type="button" data-gear-mode="idle">Idle</button>
+              <button class="mini-btn active" type="button" data-gear-mode="walk">Walk</button>
+              <button class="mini-btn" type="button" data-gear-mode="run">Run</button>
+              <button class="mini-btn" type="button" data-gear-mode="attack">Attack</button>
+            </div>
+          </div>
+
+          <div class="gear-details-panel">
+            <div class="set-tabs">
+              <button class="chip-btn active" type="button" data-gear-set="seraphim">Seraphim (Light)</button>
+              <button class="chip-btn" type="button" data-gear-set="cinder">Cinder (Fire)</button>
+              <button class="chip-btn" type="button" data-gear-set="frostveil">Frostveil (Water)</button>
+              <button class="chip-btn" type="button" data-gear-set="verdant">Verdant (Nature)</button>
+              <button class="chip-btn" type="button" data-gear-set="ironclad">Ironclad (Steel)</button>
+            </div>
+
+            <div id="gear-slots-grid" class="slots-grid"></div>
+
+            <div class="weapon-tiers">
+              <div class="weapon-tiers-label">Weapon Progression &mdash; Tier 1 to Tier 5</div>
+              <div class="tier-strip">
+                <div class="tier-item">
+                  <img src="/assets/icons/w_t1_iron_blade.webp" alt="Tier 1 Iron Blade" loading="lazy" />
+                  <span class="tier-tag t1">TIER 1</span>
+                  <span class="tier-name">Iron Blade</span>
+                </div>
+                <div class="tier-item">
+                  <img src="/assets/icons/w_t2_mantis_glaive.webp" alt="Tier 2 Mantis Glaive" loading="lazy" />
+                  <span class="tier-tag t2">TIER 2</span>
+                  <span class="tier-name">Mantis Glaive</span>
+                </div>
+                <div class="tier-item">
+                  <img src="/assets/icons/w_t3_frost_katana.webp" alt="Tier 3 Frost Katana" loading="lazy" />
+                  <span class="tier-tag t3">TIER 3</span>
+                  <span class="tier-name">Frost Katana</span>
+                </div>
+                <div class="tier-item">
+                  <img src="/assets/icons/w_t4_eclipse_blade.webp" alt="Tier 4 Eclipse Blade" loading="lazy" />
+                  <span class="tier-tag t4">TIER 4</span>
+                  <span class="tier-name">Eclipse Blade</span>
+                </div>
+                <div class="tier-item">
+                  <img src="/assets/icons/w_t5_solaris_excalibur.webp" alt="Tier 5 Solaris Excalibur" loading="lazy" />
+                  <span class="tier-tag t5">TIER 5</span>
+                  <span class="tier-name">Solaris Excalibur</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANIMATED CREATURES BESTIARY -->
+    <section class="block" id="creatures">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Elemental Bestiary</span>
+            <h2>Wild Creatures &amp; Live Animations</h2>
+          </div>
+          <span style="color:var(--muted);font-size:0.88rem;">Click any creature's card thumbnail to zoom</span>
+        </div>
+        <p>
+          Explore elemental biomes to encounter, battle, and scan over 40 wild creatures into permanent collectible cards. Test their live walk, run, and strike animations below:
+        </p>
+
+        <div class="creatures-grid">
+          <article class="creature-card">
+            <div class="creature-stage">
+              <canvas class="creature-canvas" data-creature="cinder_arachnid" width="186" height="186"></canvas>
+              <img class="creature-card-thumb" src="/assets/cards/cinder_arachnid.webp" alt="Cinder Arachnid Card" loading="lazy" data-lightbox-src="/assets/cards/cinder_arachnid.webp" data-lightbox-cap="Cinder Arachnid — Fire Creature Card" />
+            </div>
+            <div class="creature-body">
+              <div class="creature-head">
+                <h3>Cinder Arachnid</h3>
+                <span class="el-badge el-fire">Fire</span>
+              </div>
+              <p class="creature-desc">Magma-plated ambush predator from the Caldera Wastes. Strikes rapidly with searing ember bursts.</p>
+              <div class="creature-actions">
+                <button class="mini-btn active" type="button" data-c-mode="walk">Walk</button>
+                <button class="mini-btn" type="button" data-c-mode="run">Run</button>
+                <button class="mini-btn" type="button" data-c-mode="attack">Attack</button>
+              </div>
+            </div>
           </article>
 
-          <article class="card">
-            <span class="pill">Scanning &amp; Deckbuilding</span>
-            <h3>Elemental Creatures &amp; Ability Cards</h3>
-            <p>
-              Use your Synthesis Scanner in the wild to capture creature DNA, elemental abilities, and terrain locations as permanent cards. Combine Fire, Water, Nature, Electric, Steel, Flesh, Light, and Dark synergies to build your competitive loadout.
-            </p>
+          <article class="creature-card">
+            <div class="creature-stage">
+              <canvas class="creature-canvas" data-creature="spore_walker" width="186" height="186"></canvas>
+              <img class="creature-card-thumb" src="/assets/cards/spore_walker.webp" alt="Spore Walker Card" loading="lazy" data-lightbox-src="/assets/cards/spore_walker.webp" data-lightbox-cap="Spore Walker — Nature Creature Card" />
+            </div>
+            <div class="creature-body">
+              <div class="creature-head">
+                <h3>Spore Walker</h3>
+                <span class="el-badge el-nature">Nature</span>
+              </div>
+              <p class="creature-desc">Bioluminescent forest guardian roaming the Verdant Trails. Releases regenerative and toxic spore clouds.</p>
+              <div class="creature-actions">
+                <button class="mini-btn active" type="button" data-c-mode="walk">Walk</button>
+                <button class="mini-btn" type="button" data-c-mode="run">Run</button>
+                <button class="mini-btn" type="button" data-c-mode="attack">Attack</button>
+              </div>
+            </div>
           </article>
 
-          <article class="card">
-            <span class="pill">Competitive PvP</span>
-            <h3>1v1 ELO Arena &amp; Card Wagers</h3>
-            <p>
-              Test your build against real players in ranked 1v1 Arena matches. Climb the global ELO leaderboard, use daily ELO Tickets to enter matches, and participate in optional card-wager duels with server-enforced escrow protection.
-            </p>
+          <article class="creature-card">
+            <div class="creature-stage">
+              <canvas class="creature-canvas" data-creature="abyssal_ribbon" width="186" height="186"></canvas>
+              <img class="creature-card-thumb" src="/assets/cards/abyssal_ribbon.webp" alt="Abyssal Ribbon Card" loading="lazy" data-lightbox-src="/assets/cards/abyssal_ribbon.webp" data-lightbox-cap="Abyssal Ribbon — Water Creature Card" />
+            </div>
+            <div class="creature-body">
+              <div class="creature-head">
+                <h3>Abyssal Ribbon</h3>
+                <span class="el-badge el-water">Water</span>
+              </div>
+              <p class="creature-desc">Graceful deep-trench serpent that glides across pelagic shoals, slicing foes with high-pressure hydro arcs.</p>
+              <div class="creature-actions">
+                <button class="mini-btn active" type="button" data-c-mode="walk">Walk</button>
+                <button class="mini-btn" type="button" data-c-mode="run">Run</button>
+                <button class="mini-btn" type="button" data-c-mode="attack">Attack</button>
+              </div>
+            </div>
           </article>
 
-          <article class="card">
-            <span class="pill">Player Housing</span>
-            <h3>Personal Sanctuary</h3>
-            <p>
-              Step through the red Sanctuary portal in the Dome to visit your private multi-floor house. Store supplies in kitchen fridges and tiered storage wardrobes, sit at furniture, and rest in bed to restore Health and Stamina between expeditions.
-            </p>
+          <article class="creature-card">
+            <div class="creature-stage">
+              <canvas class="creature-canvas" data-creature="piston_centipede" width="186" height="186"></canvas>
+              <img class="creature-card-thumb" src="/assets/cards/piston_centipede.webp" alt="Piston Centipede Card" loading="lazy" data-lightbox-src="/assets/cards/piston_centipede.webp" data-lightbox-cap="Piston Centipede — Steel Creature Card" />
+            </div>
+            <div class="creature-body">
+              <div class="creature-head">
+                <h3>Piston Centipede</h3>
+                <span class="el-badge el-steel">Steel</span>
+              </div>
+              <p class="creature-desc">Armored industrial construct powered by hydraulic drives. Shrugs off light strikes and crushes shields.</p>
+              <div class="creature-actions">
+                <button class="mini-btn active" type="button" data-c-mode="walk">Walk</button>
+                <button class="mini-btn" type="button" data-c-mode="run">Run</button>
+                <button class="mini-btn" type="button" data-c-mode="attack">Attack</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="creature-card">
+            <div class="creature-stage">
+              <canvas class="creature-canvas" data-creature="arc_serpent" width="186" height="186"></canvas>
+              <img class="creature-card-thumb" src="/assets/cards/arc_serpent.webp" alt="Arc Serpent Card" loading="lazy" data-lightbox-src="/assets/cards/arc_serpent.webp" data-lightbox-cap="Arc Serpent — Electric Creature Card" />
+            </div>
+            <div class="creature-body">
+              <div class="creature-head">
+                <h3>Arc Serpent</h3>
+                <span class="el-badge el-electric">Electric</span>
+              </div>
+              <p class="creature-desc">High-voltage Stormcoil hunter capable of chaining lightning surges across clustered explorers.</p>
+              <div class="creature-actions">
+                <button class="mini-btn active" type="button" data-c-mode="walk">Walk</button>
+                <button class="mini-btn" type="button" data-c-mode="run">Run</button>
+                <button class="mini-btn" type="button" data-c-mode="attack">Attack</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="creature-card">
+            <div class="creature-stage">
+              <canvas class="creature-canvas" data-creature="malakor" width="186" height="186"></canvas>
+              <img class="creature-card-thumb" src="/assets/cards/malakor.webp" alt="Abyssal Malakor Card" loading="lazy" data-lightbox-src="/assets/cards/malakor.webp" data-lightbox-cap="Abyssal Malakor — Dark Boss Creature Card" />
+            </div>
+            <div class="creature-body">
+              <div class="creature-head">
+                <h3>Abyssal Malakor</h3>
+                <span class="el-badge el-dark">Dark</span>
+              </div>
+              <p class="creature-desc">Apex void-rift sovereign lurking in deep dungeons. Drops rare Tier 4–5 schematics and high-value scan data.</p>
+              <div class="creature-actions">
+                <button class="mini-btn active" type="button" data-c-mode="walk">Walk</button>
+                <button class="mini-btn" type="button" data-c-mode="run">Run</button>
+                <button class="mini-btn" type="button" data-c-mode="attack">Attack</button>
+              </div>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- IN-GAME SCREENSHOTS & ELEMENTAL CLASHES -->
+    <section class="block" id="screenshots">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Real Gameplay &amp; World Art</span>
+            <h2>Inside Sinteza</h2>
+          </div>
+          <span style="color:var(--muted);font-size:0.88rem;">Click any image to view full size</span>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/dome_hub.webp" data-lightbox-cap="Sinteza Mega-Dome — Safe social hub, Synthesis Radar, leaderboards, and the red Personal Sanctuary portal.">
+            <img src="/assets/screens/dome_hub.webp" alt="Sinteza Mega-Dome social hub screenshot" loading="lazy" />
+            <figcaption class="shot-cap">
+              <strong>Sinteza Mega-Dome Hub</strong>
+              <span>Safe lobby, global leaderboards, vending stations, and portals to Elemental Worlds &amp; your Sanctuary.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/sanctuary_house.webp" data-lightbox-cap="Personal Sanctuary — Multi-floor customizable house with storage wardrobes, kitchen fridges, furniture sitting, and HP/Stamina bed recovery.">
+            <img src="/assets/screens/sanctuary_house.webp" alt="Sinteza Personal Sanctuary interior screenshot" loading="lazy" />
+            <figcaption class="shot-cap">
+              <strong>Personal Sanctuary Housing</strong>
+              <span>Multi-floor private home with tiered storage wardrobes, kitchen fridge, armor stands, and bed HP/Stamina regen.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/clash_fire_vs_water.webp" data-lightbox-cap="Elemental Clash: Fire vs Water — Caldera Pyrelords collide with Pelagic Abyssal serpents.">
+            <img src="/assets/screens/clash_fire_vs_water.webp" alt="Fire vs Water elemental clash artwork" loading="lazy" />
+            <figcaption class="shot-cap">
+              <strong>Elemental Clash: Fire vs Water</strong>
+              <span>High-stakes elemental counters drive both open-world extraction runs and 1v1 ELO Arena duels.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/clash_steel_vs_nature.webp" data-lightbox-cap="Elemental Clash: Steel vs Nature — Forged Piston constructs clash against Verdant forest guardians.">
+            <img src="/assets/screens/clash_steel_vs_nature.webp" alt="Steel vs Nature elemental clash artwork" loading="lazy" />
+            <figcaption class="shot-cap">
+              <strong>Elemental Clash: Steel vs Nature</strong>
+              <span>Heavy forged armor meets rapid regeneration and spore control across the elemental frontier.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/clash_electric_vs_flesh.webp" data-lightbox-cap="Elemental Clash: Electric vs Flesh — Stormcoil lightning hunters against Crimsonpulse beasts.">
+            <img src="/assets/screens/clash_electric_vs_flesh.webp" alt="Electric vs Flesh elemental clash artwork" loading="lazy" />
+            <figcaption class="shot-cap">
+              <strong>Elemental Clash: Electric vs Flesh</strong>
+              <span>Chain-lightning burst damage versus relentless lifesteal and melee pressure.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/clash_light_vs_dark.webp" data-lightbox-cap="Elemental Clash: Light vs Dark — Solaris Seraphim champions confront Abyssal void sovereigns.">
+            <img src="/assets/screens/clash_light_vs_dark.webp" alt="Light vs Dark elemental clash artwork" loading="lazy" />
+            <figcaption class="shot-cap">
+              <strong>Elemental Clash: Light vs Dark</strong>
+              <span>Endgame Tier 5 radiant armaments against Abyssal dungeon bosses.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTROLS & STUDIO PHILOSOPHY -->
     <section class="block">
       <div class="wrap">
-        <h2>How to Get Started in Sinteza</h2>
+        <h2>Quick Controls &amp; Studio Philosophy</h2>
         <p>
-          Jumping into Sinteza takes less than ten seconds. You can start immediately as a Guest explorer or sign in to keep your inventory, ELO rating, and Sanctuary upgrades synced across sessions.
+          At <strong>Weaver IT</strong> (Zagreb, Croatia), we build real-time 3D multiplayer games with TypeScript, Three.js, and authoritative Node.js servers so anyone can play in seconds without downloads. Sinteza is 100% free to play — players receive daily ELO Tickets automatically and can optionally watch short rewarded ads for bonus tickets.
         </p>
 
         <table class="kbd-table">
           <thead>
             <tr>
               <th>Action</th>
-              <th>Default Control</th>
+              <th>Control</th>
               <th>Description</th>
             </tr>
           </thead>
@@ -114,49 +371,47 @@
             <tr>
               <td>Move &amp; Sprint</td>
               <td><kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> + <kbd>Shift</kbd></td>
-              <td>Navigate the Dome, open-world zones, dungeons, and your Sanctuary.</td>
+              <td>Explore the Mega-Dome, Elemental Worlds, Dungeons, and your Personal Sanctuary.</td>
             </tr>
             <tr>
-              <td>Interact / Portals / Furniture</td>
+              <td>Interact</td>
               <td><kbd>F</kbd></td>
-              <td>Enter portals, open storage wardrobes &amp; fridges, sit on furniture, or rest in bed.</td>
+              <td>Enter portals, open storage wardrobes &amp; kitchen fridges, sit on furniture, or rest in bed.</td>
             </tr>
             <tr>
               <td>Combat &amp; Abilities</td>
               <td><kbd>Left Click</kbd> / <kbd>1</kbd>–<kbd>4</kbd></td>
-              <td>Fire primary attacks and trigger equipped elemental abilities.</td>
+              <td>Swing or fire your equipped weapon and cast elemental ability cards.</td>
             </tr>
             <tr>
               <td>Second Wind</td>
               <td><kbd>R</kbd></td>
-              <td>Activate defensive recovery to restore Health and Shield in combat.</td>
+              <td>Trigger emergency HP &amp; Shield recovery in combat.</td>
             </tr>
             <tr>
               <td>Deck, Bag &amp; Scanner</td>
               <td><kbd>K</kbd> / <kbd>I</kbd> / <kbd>L</kbd></td>
-              <td>Manage your deck, inspect field loot, and scan creatures or terrain points.</td>
+              <td>Equip gear, inspect extracted loot, and scan wild creatures or terrain locations.</td>
             </tr>
           </tbody>
         </table>
-      </div>
-    </section>
 
-    <section class="block">
-      <div class="wrap">
-        <h2>Our Studio Philosophy</h2>
-        <p>
-          At <strong>Weaver IT</strong>, we believe multiplayer games should be accessible from any computer without multi-gigabyte downloads or invasive launchers. Sinteza is built from the ground up with TypeScript, Three.js, and authoritative Node.js WebSocket servers to deliver responsive 3D gameplay directly in Chrome, Firefox, Edge, and Safari.
-        </p>
-        <p>
-          We keep Sinteza free to play with fair progression. Players receive daily login ELO Tickets automatically and can optionally watch short rewarded ads to earn bonus tickets without pay-to-win walls.
-        </p>
-        <div class="cta-row" style="margin-top: 20px;">
+        <div class="cta-row" style="margin-top: 24px;">
           <a class="btn btn-primary" href="https://sinteza.weaverit.studio">Launch Sinteza Now &rarr;</a>
-          <a class="btn btn-secondary" href="/about/">More About Weaver IT</a>
+          <a class="btn btn-secondary" href="/sinteza/">Read Full Game Guide</a>
+          <a class="btn btn-secondary" href="/about/">About Weaver IT</a>
         </div>
       </div>
     </section>
   </main>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Close preview">&times;</button>
+    <div class="lightbox-inner">
+      <img id="lightbox-img" src="" alt="Preview" />
+      <div id="lightbox-cap" class="lightbox-caption"></div>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <div class="wrap footer-row">
@@ -169,5 +424,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="/showcase.js" defer></script>
 </body>
 </html>
