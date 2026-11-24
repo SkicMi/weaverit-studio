@@ -49,25 +49,21 @@
           <a class="btn btn-secondary" href="/sinteza/">Player Guide</a>
         </div>
 
-        <div class="stage-card" aria-label="Interactive Sinteza Nature Path live sprite animation">
-          <div class="stage-canvas-wrap">
-            <canvas id="nature-stage"></canvas>
-            <div class="stage-badge">LIVE IN-GAME SPRITES &bull; VERDANT NATURE TRAIL</div>
+        <div class="stage-card" aria-label="Real 3D in-game footage from Sinteza">
+          <div class="video-stage-wrap">
+            <video id="hero-gameplay-video" autoplay loop muted playsinline poster="/assets/screens/elemental_world.webp">
+              <source src="/assets/screens/sinteza_gameplay.mp4" type="video/mp4" />
+            </video>
+            <div class="stage-badge">REAL 3D IN-GAME FOOTAGE &bull; VERDANTWARDEN NATURE BIOME</div>
           </div>
           <div class="stage-controls">
             <div class="ctrl-group">
-              <span class="ctrl-label">Motion</span>
-              <button class="chip-btn active" type="button" data-nature-mode="walk">Walk</button>
-              <button class="chip-btn" type="button" data-nature-mode="run">Sprint</button>
-              <button class="chip-btn" type="button" data-nature-mode="attack">Attack</button>
+              <span class="ctrl-label">Captured Live from</span>
+              <a href="https://sinteza.weaverit.studio" style="font-weight:700;font-size:0.9rem;">sinteza.weaverit.studio</a>
+              <span style="color:var(--muted);font-size:0.84rem;">&mdash; 3D WebGL engine, dynamic weather, real-time shadows &amp; Synthesis Radar</span>
             </div>
             <div class="ctrl-group">
-              <span class="ctrl-label">Armor Set</span>
-              <button class="chip-btn active" type="button" data-nature-set="verdant">Verdant</button>
-              <button class="chip-btn" type="button" data-nature-set="cinder">Cinder</button>
-              <button class="chip-btn" type="button" data-nature-set="frostveil">Frostveil</button>
-              <button class="chip-btn" type="button" data-nature-set="seraphim">Seraphim</button>
-              <button class="chip-btn" type="button" data-nature-set="ironclad">Ironclad</button>
+              <a class="btn btn-primary btn-sm" href="https://sinteza.weaverit.studio">Jump Into This World &rarr;</a>
             </div>
           </div>
         </div>
@@ -91,8 +87,16 @@
           <a class="btn btn-secondary btn-sm" href="https://sinteza.weaverit.studio">Build Your Loadout &rarr;</a>
         </div>
         <p>
-          Every piece of equipment you loot, craft, or extract in Sinteza renders directly on your character in real time across 8 directions and 14 animation frames. Mix and match <strong>Helmet</strong>, <strong>Visor</strong>, <strong>Armor</strong>, <strong>Gloves</strong>, <strong>Legs</strong>, <strong>Footwear</strong>, and <strong>Tier 1–5 Weapons</strong>. Click any set below to inspect its live animated sprite and slot breakdown:
+          Sinteza features a full extraction-style <strong>Field Pack &amp; Synthesis Gear</strong> inventory: a spatial <strong>6&times;5 Main Backpack</strong>, expandable <strong>4&times;3 Tactical Pouch</strong>, <strong>7 Equipment Slots</strong> (Weapon, Helmet, Armor, Boots, Relic, Gloves, Legs, Visor), an <strong>Explore Tactical Belt [1–4]</strong>, and live character customization. Every equipped piece renders directly on your 3D sprite in real time:
         </p>
+
+        <figure class="feature-screen" data-lightbox-src="/assets/screens/gear_system_ingame.webp" data-lightbox-cap="Real In-Game UI: Field Pack & Synthesis Gear — 7 equipment slots, 6x5 spatial backpack, 4x3 Tactical Pouch, Explore Tactical Belt, and Runner Appearance.">
+          <img src="/assets/screens/gear_system_ingame.webp" alt="Real in-game Field Pack and Synthesis Gear UI screenshot" loading="lazy" />
+          <figcaption class="shot-cap">
+            <strong>Real In-Game UI &mdash; Field Pack &amp; Synthesis Gear (Press [I])</strong>
+            <span>Click to inspect full size &bull; Spatial grid backpack, tactical pouches, equipment slots, and live Runner Appearance customization.</span>
+          </figcaption>
+        </figure>
 
         <div class="gear-layout">
           <div class="gear-preview-panel">
@@ -167,8 +171,16 @@
           <span style="color:var(--muted);font-size:0.88rem;">Click any creature's card thumbnail to zoom</span>
         </div>
         <p>
-          Explore elemental biomes to encounter, battle, and scan over 40 wild creatures into permanent collectible cards. Test their live walk, run, and strike animations below:
+          Explore elemental biomes to encounter, battle, and scan over 40 wild creatures into permanent cards inside your <strong>Cyber Deck</strong>. Equip an Active Creature Resonance (like <em>Malakor</em>) and build a 6-card Battle Deck for open-world combat and 1v1 Arena duels:
         </p>
+
+        <figure class="feature-screen" data-lightbox-src="/assets/screens/creature_deck_ingame.webp" data-lightbox-cap="Real In-Game UI: Cyber Deck — Active Creature Resonance (Malakor), 6-card elemental Battle Deck, and Cyber Card Binder.">
+          <img src="/assets/screens/creature_deck_ingame.webp" alt="Real in-game Cyber Deck and Creature Resonance UI screenshot" loading="lazy" />
+          <figcaption class="shot-cap">
+            <strong>Real In-Game UI &mdash; Cyber Deck &amp; Active Creature Resonance (Press [K])</strong>
+            <span>Click to inspect full size &bull; Slot your scanned Creature Resonance and 6 elemental Ability Cards for PvE and 1v1 ELO Arena battles.</span>
+          </figcaption>
+        </figure>
 
         <div class="creatures-grid">
           <article class="creature-card">
@@ -300,6 +312,14 @@
         </div>
 
         <div class="gallery-grid">
+          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/elemental_world.webp" data-lightbox-cap="Elemental World (Verdantwarden Clan) — Live Woodland Rain dynamic weather, 3D exploration, Synthesis Radar, and Resonance HUD.">
+            <img src="/assets/screens/elemental_world.webp" alt="Sinteza 3D Elemental World Nature biome with Woodland Rain screenshot" loading="lazy" />
+            <figcaption class="shot-cap">
+              <strong>3D Elemental World &amp; Dynamic Weather</strong>
+              <span>Explore Verdantwarden biomes with live Woodland Rain &amp; Hard Wind weather buffs, Synthesis Radar, and roaming wild creatures.</span>
+            </figcaption>
+          </figure>
+
           <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/dome_hub.webp" data-lightbox-cap="Sinteza Mega-Dome — Safe social hub, Synthesis Radar, leaderboards, and the red Personal Sanctuary portal.">
             <img src="/assets/screens/dome_hub.webp" alt="Sinteza Mega-Dome social hub screenshot" loading="lazy" />
             <figcaption class="shot-cap">
@@ -316,7 +336,15 @@
             </figcaption>
           </figure>
 
-          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/clash_fire_vs_water.webp" data-lightbox-cap="Elemental Clash: Fire vs Water — Caldera Pyrelords collide with Pelagic Abyssal serpents.">
+          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/guild_lodge.webp" data-lightbox-cap="Sylvanheart Guild Lodge — Multi-floor open-world wooden lodge with shelter mechanics during storms and full-loot Open PvP.">
+            <img src="/assets/screens/guild_lodge.webp" alt="Sinteza Sylvanheart Guild Lodge interior screenshot" loading="lazy" />
+            <figcaption class="shot-cap">
+              <strong>Sylvanheart Guild Lodge (Open World)</strong>
+              <span>Enterable multi-floor buildings across the frontier offering storm shelter and tactical Open PvP interiors.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/clash_fire_vs_water.webp" data-lightbox-cap="Elemental Clash: Fire vs Water — Official Sinteza loading art.">
             <img src="/assets/screens/clash_fire_vs_water.webp" alt="Fire vs Water elemental clash artwork" loading="lazy" />
             <figcaption class="shot-cap">
               <strong>Elemental Clash: Fire vs Water</strong>
@@ -324,27 +352,11 @@
             </figcaption>
           </figure>
 
-          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/clash_steel_vs_nature.webp" data-lightbox-cap="Elemental Clash: Steel vs Nature — Forged Piston constructs clash against Verdant forest guardians.">
+          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/clash_steel_vs_nature.webp" data-lightbox-cap="Elemental Clash: Steel vs Nature — Official Sinteza loading art.">
             <img src="/assets/screens/clash_steel_vs_nature.webp" alt="Steel vs Nature elemental clash artwork" loading="lazy" />
             <figcaption class="shot-cap">
               <strong>Elemental Clash: Steel vs Nature</strong>
               <span>Heavy forged armor meets rapid regeneration and spore control across the elemental frontier.</span>
-            </figcaption>
-          </figure>
-
-          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/clash_electric_vs_flesh.webp" data-lightbox-cap="Elemental Clash: Electric vs Flesh — Stormcoil lightning hunters against Crimsonpulse beasts.">
-            <img src="/assets/screens/clash_electric_vs_flesh.webp" alt="Electric vs Flesh elemental clash artwork" loading="lazy" />
-            <figcaption class="shot-cap">
-              <strong>Elemental Clash: Electric vs Flesh</strong>
-              <span>Chain-lightning burst damage versus relentless lifesteal and melee pressure.</span>
-            </figcaption>
-          </figure>
-
-          <figure class="shot-card" style="margin:0;" data-lightbox-src="/assets/screens/clash_light_vs_dark.webp" data-lightbox-cap="Elemental Clash: Light vs Dark — Solaris Seraphim champions confront Abyssal void sovereigns.">
-            <img src="/assets/screens/clash_light_vs_dark.webp" alt="Light vs Dark elemental clash artwork" loading="lazy" />
-            <figcaption class="shot-cap">
-              <strong>Elemental Clash: Light vs Dark</strong>
-              <span>Endgame Tier 5 radiant armaments against Abyssal dungeon bosses.</span>
             </figcaption>
           </figure>
         </div>
